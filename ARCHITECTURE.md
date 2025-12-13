@@ -33,7 +33,7 @@ Leveraging Next.js 15 App Router for:
 
 ## Data Flow
 
-### Home Page (Popular Movies)
+### Home Page
 
 ```
 Server (ISR) → fetchData() → Initial Data

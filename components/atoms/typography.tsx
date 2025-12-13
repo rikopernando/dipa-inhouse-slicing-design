@@ -20,7 +20,7 @@ const typographyVariants = cva('', {
       large: 'text-lg font-semibold',
       small: 'text-sm font-medium leading-none',
       muted: 'text-sm text-muted-foreground',
-      code: 'relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold',
+      code: 'relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-neue-montreal text-sm font-semibold',
       blockquote: 'mt-6 border-l-2 pl-6 italic',
     },
   },

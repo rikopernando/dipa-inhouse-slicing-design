@@ -25,18 +25,18 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 
 ## Types
 
-| Type       | Description                                             | Example                                |
-| ---------- | ------------------------------------------------------- | -------------------------------------- |
-| `feat`     | A new feature                                           | `feat: add movie search functionality` |
-| `fix`      | A bug fix                                               | `fix: resolve image loading issue`     |
-| `docs`     | Documentation only changes                              | `docs: update README`                  |
-| `style`    | Code style changes (formatting, missing semi colons)    | `style: format with prettier`          |
-| `refactor` | Code change that neither fixes a bug nor adds a feature | `refactor: extract movie card`         |
-| `perf`     | Performance improvements                                | `perf: optimize image loading`         |
-| `test`     | Adding or updating tests                                | `test: add movie card tests`           |
-| `chore`    | Changes to build process or auxiliary tools             | `chore: update dependencies`           |
-| `ci`       | Changes to CI configuration files and scripts           | `ci: add GitHub Actions workflow`      |
-| `revert`   | Reverts a previous commit                               | `revert: revert feat: add search`      |
+| Type       | Description                                             | Example                            |
+| ---------- | ------------------------------------------------------- | ---------------------------------- |
+| `feat`     | A new feature                                           | `feat: add search functionality`   |
+| `fix`      | A bug fix                                               | `fix: resolve image loading issue` |
+| `docs`     | Documentation only changes                              | `docs: update README`              |
+| `style`    | Code style changes (formatting, missing semi colons)    | `style: format with prettier`      |
+| `refactor` | Code change that neither fixes a bug nor adds a feature | `refactor: extract card`           |
+| `perf`     | Performance improvements                                | `perf: optimize image loading`     |
+| `test`     | Adding or updating tests                                | `test: add card tests`             |
+| `chore`    | Changes to build process or auxiliary tools             | `chore: update dependencies`       |
+| `ci`       | Changes to CI configuration files and scripts           | `ci: add GitHub Actions workflow`  |
+| `revert`   | Reverts a previous commit                               | `revert: revert feat: add search`  |
 
 ## Scopes
 
@@ -54,7 +54,7 @@ Scopes are optional but recommended for clarity:
 ### Simple commits
 
 ```bash
-feat: add movie detail page
+feat: add detail page
 fix: resolve skeleton loader flickering
 docs: add commitlint documentation
 style: format components with prettier
@@ -65,16 +65,15 @@ style: format components with prettier
 ```bash
 feat(search): add debouncing to search input
 fix(api): handle empty response from TMDB
-refactor(card): extract MovieCard to separate component
+refactor(card): extract to separate component
 perf(images): implement lazy loading for posters
 ```
 
 ### With body
 
 ```bash
-feat(pagination): add pagination to movie list
+feat(pagination): add pagination to list
 
-Implement pagination controls using TMDB API page parameter.
 Shows 20 movies per page with next/previous buttons.
 
 Closes #123
@@ -96,15 +95,15 @@ NEXT_PUBLIC_TMDB_KEY with bearer token value.
 
 ```bash
 # Missing type
-"Add movie search"
+"Add search"
 ⚠️ subject may not be empty [subject-empty]
 
 # Uppercase subject
-"Feat: Add Movie Search"
+"Feat: Add Search"
 ⚠️ subject must not be sentence-case, start-case, pascal-case, upper-case
 
 # Invalid type
-"feature: add movie search"
+"feature: add search"
 ⚠️ type must be one of [feat, fix, docs, ...]
 
 # Too long (>100 chars)
@@ -115,7 +114,7 @@ NEXT_PUBLIC_TMDB_KEY with bearer token value.
 ✅ **Good Examples:**
 
 ```bash
-"feat: add movie search"
+"feat: add search"
 "fix(api): resolve timeout issue"
 "docs: update setup instructions"
 "refactor(card): simplify props interface"

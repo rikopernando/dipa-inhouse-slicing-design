@@ -20,7 +20,8 @@ export function Footer() {
               Moniveo
             </Typography>
             <Typography variant="muted" className="text-sm">
-              Discover popular movies and series with detailed information powered by TMDB API.
+              Powerful and production-ready, our cloud platform has the solutions you need to
+              succeed.
             </Typography>
           </div>
 
@@ -36,12 +37,6 @@ export function Footer() {
               >
                 Home
               </Link>
-              <Link
-                href="/"
-                className="text-muted-foreground hover:text-primary text-sm transition-colors"
-              >
-                Popular Movies
-              </Link>
             </nav>
           </div>
 
@@ -53,12 +48,12 @@ export function Footer() {
             <Typography variant="muted" className="mb-2 text-sm">
               Data provided by{' '}
               <a
-                href="https://www.themoviedb.org/"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary font-medium transition-colors"
               >
-                TMDB
+                Some Provider
               </a>
             </Typography>
             <a
