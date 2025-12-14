@@ -45,15 +45,21 @@
 
 :root {
   --radius: 0.625rem;
+
+  /* Primary Gradient Colors */
+  --gradient-start: #93d2ff;
+  --gradient-end: #0542fc;
+  --border-outline: #dde3ee;
+
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: oklch(20.86% 0.037 269.04);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --primary: oklch(50.12% 0.275 263.98);
+  --primary-foreground: oklch(83.74% 0.09 240.27);
+  --secondary: oklch(57.34% 0.23 265.4);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -112,6 +118,16 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@layer utilities {
+  .bg-gradient-primary {
+    background: linear-gradient(180.97deg, #93d2ff -43.42%, #0542fc 99.17%);
+  }
+
+  .border-outline {
+    border-color: var(--border-outline);
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -120,7 +136,7 @@
   body {
     @apply bg-background text-foreground;
   }
-  .font-neue-montreal {
-    font-family: var(--neue-montreal), system-ui, sans-serif;
+  .font-inter {
+    font-family: var(--font-inter), system-ui, sans-serif;
   }
 }
