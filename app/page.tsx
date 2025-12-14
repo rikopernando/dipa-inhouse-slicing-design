@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { HeroSection } from '@/components/organisms/hero-section';
+import { BrandSection } from '@/components/organisms/brand-section';
 
 /**
  * Enable ISR (Incremental Static Regeneration)
@@ -9,13 +11,22 @@ export const revalidate = 1800;
 /**
  * Page-specific metadata
  */
-export const metadata: Metadata = {};
+export const metadata: Metadata = {
+  title: 'AI Automation Platform - Turn Workflows into AI Agents',
+  description:
+    'Powerful and production-ready, our cloud platform has the solutions you need to succeed. Turn your workflows into AI agent automations.',
+};
 
 /**
  * Home Page (Server Component with ISR)
  * Pre-rendered at build time and revalidated every 30 minutes
- * Includes client-side search functionality
+ * Features hero section and brand showcase
  */
 export default async function Home() {
-  return <div className="container mx-auto px-4 py-4 lg:px-6 lg:py-8">Home Page</div>;
+  return (
+    <>
+      <HeroSection />
+      <BrandSection />
+    </>
+  );
 }

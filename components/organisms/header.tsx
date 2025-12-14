@@ -19,7 +19,7 @@ import { Button } from '@/components/ui/button';
 export function Header() {
   return (
     <header className="border-b">
-      <div className="container mx-auto flex h-[84px] items-center justify-between px-4 lg:px-6">
+      <div className="container mx-auto flex h-[84px] max-w-7xl items-center justify-between px-4 lg:px-10">
         {/* Logo */}
         <Link href="/" className="flex items-center transition-opacity hover:opacity-80">
           <Image src="/images/logo.webp" alt="Logo" width={155} height={40} priority />
