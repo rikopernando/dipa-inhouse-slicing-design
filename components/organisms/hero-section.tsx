@@ -1,8 +1,15 @@
+import Image from 'next/image';
+import { ChevronRight, Globe, Mic, Plus } from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
-import { ChevronRight } from 'lucide-react';
 import { Typography } from '@/components/atoms/typography';
 import { Badge } from '@/components/ui/badge';
-import Image from 'next/image';
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupTextarea,
+} from '@/components/ui/input-group';
 
 /**
  * Hero Section Component
@@ -56,7 +63,6 @@ export function HeroSection() {
           />
         </div>
 
-        {/* Hero Image 02 - Middle */}
         <div className="animate-fade-in absolute top-[56%] left-1/2 z-20 w-[25%] -translate-x-1/2 -translate-y-1/2 opacity-0 [animation-delay:200ms] [animation-fill-mode:forwards]">
           <Image
             src="/images/hero-02.webp"
@@ -79,6 +85,28 @@ export function HeroSection() {
               priority
             />
           </div>
+        </div>
+
+        <div className="absolute right-8 bottom-8 w-[480px] rounded-[18px] bg-white p-[1px]">
+          <InputGroup className="!h-[190px]">
+            <InputGroupTextarea id="message" name="message" placeholder="Ask anythings..." />
+            <InputGroupAddon align="block-end">
+              <InputGroupButton variant="outline" className="rounded-full" size="icon-md">
+                <Plus />
+              </InputGroupButton>
+              <Button variant="outline">
+                <Globe />
+                Web Search
+              </Button>
+              <InputGroupButton variant="outline" className="ml-auto rounded-full" size="icon-md">
+                <Mic />
+              </InputGroupButton>
+              <InputGroupButton className="rounded-full" size="icon-md" variant="default">
+                <Image alt="AI Solution" src="/images/icons/sparkle.webp" width={18} height={18} />
+                <span className="sr-only">Send</span>
+              </InputGroupButton>
+            </InputGroupAddon>
+          </InputGroup>
         </div>
       </div>
     </section>

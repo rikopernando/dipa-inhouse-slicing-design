@@ -41,6 +41,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-text-placeholder: var(--text-placeholder);
 }
 
 :root {
@@ -50,6 +51,7 @@
   --gradient-end: #0542fc;
   --border-outline: #dde3ee;
   --primary-badge: rgba(5, 66, 252, 0.06);
+  --text-placeholder: rgba(107, 123, 148, 1); /* For placeholder text and muted text */
 
   --background: oklch(1 0 0);
   --foreground: oklch(20.86% 0.037 269.04);
@@ -66,9 +68,9 @@
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: rgba(227, 232, 239, 1);
+  --input: rgba(227, 232, 239, 1);
+  --ring: #93d2ff;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -80,8 +82,8 @@
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-border: rgba(227, 232, 239, 1);
+  --sidebar-ring: #93d2ff;
 }
 
 .dark {
