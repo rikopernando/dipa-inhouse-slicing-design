@@ -183,3 +183,13 @@ export const ENTERPRISE_CARDS: EnterpriseCard[] = [
     variant: 'image-background',
   },
 ] as const;
+
+/**
+ * Content for the Platform Section
+ */
+export const PLATFORM_CONTENT = {
+  label: 'THE PLATFORM',
+  title: 'Connected AI orchestration platform',
+  description:
+    'Powerful and production-ready, our cloud platform has the solutions you need to succeed.',
+} as const;

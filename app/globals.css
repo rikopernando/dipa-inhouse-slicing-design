@@ -59,6 +59,7 @@
   --enterprice-background: rgba(11, 19, 46, 1);
   --enterprice-border: rgba(255, 255, 255, 0.08);
   --enterprice-card: rgba(255, 255, 255, 0.04);
+  --enterprice-text: rgba(255, 255, 255, 0.48);
 
   /* Gradient Backgrounds */
   --gradient-hero-start: #ffffff;
@@ -69,7 +70,8 @@
   --gradient-toolkit-end: #f4f7fa;
   --gradient-enterprice-start: #93d2ff;
   --gradient-enterprice-end: #124ff8;
-  --enterprice-text: rgba(255, 255, 255, 0.48);
+  --gradient-platform-start: #ffffff;
+  --gradient-platform-end: #f5f8ff;
 
   --background: oklch(1 0 0);
   --foreground: oklch(20.86% 0.037 269.04);
@@ -171,7 +173,7 @@
   }
 
   /* Enterprice Section */
-  .enterprice-background {
+  .bg-enterprice {
     background-color: var(--enterprice-background);
   }
 
@@ -181,6 +183,15 @@
 
   .text-enterprice-card {
     color: var(--enterprice-text);
+  }
+
+  /* Platfrom Section */
+  .bg-gradient-platfrom {
+    background: linear-gradient(
+      180deg,
+      var(--gradient-platform-start) 0%,
+      var(--gradient-platform-end) 100%
+    );
   }
 
   /* Text Gradients */

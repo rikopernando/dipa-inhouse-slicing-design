@@ -10,7 +10,7 @@ import { EnterpriseCard } from '@/components/molecules/enterprise-card';
  */
 export function EnterpriseSection() {
   return (
-    <section className="enterprice-background">
+    <section className="bg-enterprice">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="border-enterprice mx-auto max-w-7xl border-x px-16 py-20">
           {/* Section Header */}
