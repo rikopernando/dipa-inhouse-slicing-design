@@ -259,7 +259,7 @@ export const ACHIEVEMENT_ITEMS: AchievementItem[] = [
   },
   {
     id: '3',
-    title: '98',
+    title: '98%',
     description: 'Enterprise SLA Volumes block storage',
   },
 ] as const;
