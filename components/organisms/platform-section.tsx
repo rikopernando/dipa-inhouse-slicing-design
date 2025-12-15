@@ -33,15 +33,14 @@ export function PlatformSection() {
               {PLATFORM_CONTENT.description}
             </Typography>
           </header>
-          <div className="relative mt-8 h-[572px] w-full rounded-tl-md rounded-tr-md border-t border-r border-l">
-            <Image
-              src="/images/platform/dashboard.svg"
-              alt="Dashboard Platform"
-              fill
-              className="mt-1.5 rounded-tl-md rounded-tr-md object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+          <Image
+            src="/images/platform/dashboard.svg"
+            alt="Dashboard Platform"
+            width={1080}
+            height={572}
+            className="mt-12 rounded-tl-md rounded-tr-md border-x border-t object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </div>
       </div>
     </section>

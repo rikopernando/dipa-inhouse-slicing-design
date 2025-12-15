@@ -26,6 +26,15 @@ export interface ToolkitItem {
 }
 
 /**
+ * Toolkit item configuration type
+ */
+export interface AchievementItem {
+  id: string;
+  title: string;
+  description: string;
+}
+
+/**
  * Brand logos for the Brand Section
  */
 export const BRANDS: Brand[] = [
@@ -193,3 +202,24 @@ export const PLATFORM_CONTENT = {
   description:
     'Powerful and production-ready, our cloud platform has the solutions you need to succeed.',
 } as const;
+
+/**
+ * Achievement items for the Achievement Section
+ */
+export const ACHIEVEMENT_ITEMS: AchievementItem[] = [
+  {
+    id: '1',
+    title: '2M+',
+    description: 'Customers building with Moniveo',
+  },
+  {
+    id: '2',
+    title: 'SOC 3',
+    description: 'Standards for security and compliance',
+  },
+  {
+    id: '3',
+    title: '98',
+    description: 'Enterprise SLA Volumes block storage',
+  },
+] as const;

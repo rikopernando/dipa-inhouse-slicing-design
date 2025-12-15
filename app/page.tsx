@@ -4,6 +4,7 @@ import { BrandSection } from '@/components/organisms/brand-section';
 import { ToolkitSection } from '@/components/organisms/toolkit-section';
 import { EnterpriseSection } from '@/components/organisms/enterprise-section';
 import { PlatformSection } from '@/components/organisms/platform-section';
+import { AchievementSection } from '@/components/organisms/achievement-section';
 
 /**
  * Enable ISR (Incremental Static Regeneration)
@@ -33,6 +34,7 @@ export default async function Home() {
       <ToolkitSection />
       <EnterpriseSection />
       <PlatformSection />
+      <AchievementSection />
     </>
   );
 }
