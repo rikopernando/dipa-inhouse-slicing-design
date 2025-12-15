@@ -26,12 +26,24 @@ export interface ToolkitItem {
 }
 
 /**
- * Toolkit item configuration type
+ * Achievement item configuration type
  */
 export interface AchievementItem {
   id: string;
   title: string;
   description: string;
+}
+
+/**
+ * Platform decorative image configuration type
+ */
+export interface PlatformDecorativeImage {
+  id: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  position: string;
 }
 
 /**
@@ -201,7 +213,35 @@ export const PLATFORM_CONTENT = {
   title: 'Connected AI orchestration platform',
   description:
     'Powerful and production-ready, our cloud platform has the solutions you need to succeed.',
+  mainImage: {
+    src: '/images/platform/dashboard.svg',
+    alt: 'Dashboard Platform',
+    width: 1080,
+    height: 572,
+  },
 } as const;
+
+/**
+ * Decorative images for the Platform Section
+ */
+export const PLATFORM_DECORATIVE_IMAGES: PlatformDecorativeImage[] = [
+  {
+    id: 'connected',
+    src: '/images/platform/connected.webp',
+    alt: 'Connected',
+    width: 120,
+    height: 82,
+    position: 'top-36 left-40',
+  },
+  {
+    id: 'salesforce',
+    src: '/images/platform/salesforce.webp',
+    alt: 'Salesforce',
+    width: 120,
+    height: 82,
+    position: 'top-48 right-24',
+  },
+] as const;
 
 /**
  * Achievement items for the Achievement Section
@@ -221,5 +261,82 @@ export const ACHIEVEMENT_ITEMS: AchievementItem[] = [
     id: '3',
     title: '98',
     description: 'Enterprise SLA Volumes block storage',
+  },
+] as const;
+
+/**
+ * Pricing feature configuration type
+ */
+export interface PricingFeature {
+  id: string;
+  text: string;
+  included: boolean;
+  disabled: boolean;
+}
+
+/**
+ * Pricing plan configuration type
+ */
+export interface PricingPlan {
+  id: string;
+  name: string;
+  description: string;
+  monthlyPrice: number;
+  annualPrice: number;
+  isPopular?: boolean;
+  features: PricingFeature[];
+  buttonText: string;
+  buttonVariant: 'default' | 'outline';
+}
+
+/**
+ * Content for the Pricing Section
+ */
+export const PRICING_CONTENT = {
+  label: 'PRICING',
+  title: {
+    line1: 'Start for free',
+    line2: 'Get used to winning',
+  },
+  annualDiscount: '10% off',
+} as const;
+
+/**
+ * Pricing plans for the Pricing Section
+ */
+export const PRICING_PLANS: PricingPlan[] = [
+  {
+    id: 'basic',
+    name: 'Basic',
+    description: 'Kickstart your product research in your bussiness at no cost',
+    monthlyPrice: 0,
+    annualPrice: 0,
+    features: [
+      { id: 'users', text: '25 Users', included: true, disabled: true },
+      { id: 'support', text: 'Email and live chat support', included: true, disabled: true },
+      { id: 'ai-powerups', text: 'AI power-ups', included: true, disabled: true },
+    ],
+    buttonText: 'Current Plan',
+    buttonVariant: 'outline',
+  },
+  {
+    id: 'enterprise',
+    name: 'Enterprise',
+    description: 'Fuel your product workflow with more advanced research.',
+    monthlyPrice: 12,
+    annualPrice: 10.8,
+    isPopular: true,
+    features: [
+      { id: 'workspace', text: 'Unlimited workspace', included: true, disabled: false },
+      {
+        id: 'admin',
+        text: 'Advanced admin permissions and app controls',
+        included: true,
+        disabled: false,
+      },
+      { id: 'tasks', text: 'Annual task limits', included: true, disabled: false },
+    ],
+    buttonText: 'Upgrade Now',
+    buttonVariant: 'default',
   },
 ] as const;

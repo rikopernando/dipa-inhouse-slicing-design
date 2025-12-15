@@ -72,6 +72,11 @@
   --gradient-enterprice-end: #124ff8;
   --gradient-platform-start: #ffffff;
   --gradient-platform-end: #f5f8ff;
+  --gradient-price-card-start: #ffffff;
+  --gradient-price-card-end: #f0f5ff;
+  --gradient-price-tag-start: #93d2ff;
+  --gradient-price-tag-mid: #0542fc;
+  --gradient-price-tag-end: #e3e8f1;
 
   --background: oklch(1 0 0);
   --foreground: oklch(20.86% 0.037 269.04);
@@ -191,6 +196,24 @@
       180deg,
       var(--gradient-platform-start) 0%,
       var(--gradient-platform-end) 100%
+    );
+  }
+
+  /* Price Section */
+  .bg-gradient-price-card {
+    background: linear-gradient(
+      163.91deg,
+      var(--gradient-price-card-start) 49.31%,
+      var(--gradient-price-card-end) 96.84%
+    );
+  }
+
+  .bg-gradient-price-tag {
+    background: linear-gradient(
+      191.71deg,
+      var(--gradient-price-tag-start) -22.23%,
+      var(--gradient-price-tag-mid) 33.51%,
+      var(--gradient-price-tag-end) 72.02%
     );
   }
 
