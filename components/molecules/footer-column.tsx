@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import Link from 'next/link';
 import { Typography } from '@/components/atoms/typography';
 import type { FooterColumn as FooterColumnType } from '@/lib/data/home';
@@ -11,8 +12,9 @@ interface FooterColumnProps {
  *
  * Displays a column of navigation links in the footer.
  * Includes a title and list of links with hover effects.
+ * Memoized for performance optimization since props rarely change.
  */
-export function FooterColumn({ column }: FooterColumnProps) {
+function FooterColumnComponent({ column }: FooterColumnProps) {
   return (
     <div className="space-y-4">
       <Typography variant="h6" className="text-lg font-medium">
@@ -32,3 +34,5 @@ export function FooterColumn({ column }: FooterColumnProps) {
     </div>
   );
 }
+
+export const FooterColumn = memo(FooterColumnComponent);

@@ -11,12 +11,12 @@ import { FooterBottom } from '@/components/molecules/footer-bottom';
  */
 export function Footer() {
   return (
-    <>
-      <footer className="bg-background border-t">
+    <footer>
+      <div className="bg-background border-t">
         <div className="container mx-auto px-4 lg:px-6">
-          <div className="mx-auto max-w-7xl space-y-12 border-x px-8 py-20 md:px-16">
+          <div className="mx-auto max-w-7xl border-x">
             {/* Footer Columns Grid */}
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div className="grid grid-cols-1 gap-8 px-8 py-20 sm:grid-cols-2 md:grid-cols-3 md:px-16 lg:grid-cols-5">
               {/* Navigation Columns */}
               {FOOTER_COLUMNS.map((column) => (
                 <FooterColumn key={column.id} column={column} />
@@ -27,14 +27,13 @@ export function Footer() {
             </div>
           </div>
         </div>
-      </footer>
-
+      </div>
       {/* Footer Bottom */}
       <FooterBottom
         copyright={FOOTER_BOTTOM.copyright}
         logo={FOOTER_BOTTOM.logo}
         legalLinks={FOOTER_BOTTOM.legalLinks}
       />
-    </>
+    </footer>
   );
 }
