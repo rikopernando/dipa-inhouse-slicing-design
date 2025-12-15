@@ -60,6 +60,7 @@
   --enterprise-border: rgba(255, 255, 255, 0.08);
   --enterprise-card: rgba(255, 255, 255, 0.04);
   --enterprise-text: rgba(255, 255, 255, 0.48);
+  --input-background: rgba(241, 244, 248, 1);
 
   /* Gradient Backgrounds */
   --gradient-hero-start: #ffffff;
@@ -248,6 +249,11 @@
   /* Badge Backgrounds */
   .bg-primary-badge {
     background-color: var(--primary-badge);
+  }
+
+  /* Input Backgrounds */
+  .bg-input {
+    background-color: var(--input-background);
   }
 }
 

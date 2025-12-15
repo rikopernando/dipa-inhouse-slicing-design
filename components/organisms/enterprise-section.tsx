@@ -10,9 +10,9 @@ import { EnterpriseCard } from '@/components/molecules/enterprise-card';
  */
 export function EnterpriseSection() {
   return (
-    <section className="bg-background">
+    <section className="bg-enterprise">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="bg-enterprise border-enterprise mx-auto max-w-7xl border-x px-16 py-20">
+        <div className="border-enterprise mx-auto max-w-7xl border-x px-16 py-20">
           {/* Section Header */}
           <header className="mb-12 flex max-w-[560px] flex-col gap-4">
             <Typography

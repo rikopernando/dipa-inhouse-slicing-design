@@ -1,81 +1,40 @@
-import Link from 'next/link';
-import { Github, Heart } from 'lucide-react';
-
-import { Typography } from '@/components/atoms/typography';
+import { FOOTER_COLUMNS, SOCIAL_LINKS, FOOTER_BOTTOM } from '@/lib/data/home';
+import { FooterColumn } from '@/components/molecules/footer-column';
+import { FooterNewsletter } from '@/components/molecules/footer-newsletter';
+import { FooterBottom } from '@/components/molecules/footer-bottom';
 
 /**
- * Footer component with app information
- * Displays credits, links, and additional information
+ * Footer Component
+ *
+ * Main footer organism with navigation columns, newsletter subscription, and legal links.
+ * Features a responsive grid layout and comprehensive site navigation.
  */
 export function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {/* About Section */}
-          <div>
-            <Typography variant="h6" className="mb-3">
-              Moniveo
-            </Typography>
-            <Typography variant="muted" className="text-sm">
-              Powerful and production-ready, our cloud platform has the solutions you need to
-              succeed.
-            </Typography>
-          </div>
+    <>
+      <footer className="bg-background border-t">
+        <div className="container mx-auto px-4 lg:px-6">
+          <div className="mx-auto max-w-7xl space-y-12 border-x px-8 py-20 md:px-16">
+            {/* Footer Columns Grid */}
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+              {/* Navigation Columns */}
+              {FOOTER_COLUMNS.map((column) => (
+                <FooterColumn key={column.id} column={column} />
+              ))}
 
-          {/* Quick Links */}
-          <div>
-            <Typography variant="h6" className="mb-3">
-              Quick Links
-            </Typography>
-            <nav className="flex flex-col gap-2">
-              <Link
-                href="/"
-                className="text-muted-foreground hover:text-primary text-sm transition-colors"
-              >
-                Home
-              </Link>
-            </nav>
-          </div>
-
-          {/* Credits */}
-          <div>
-            <Typography variant="h6" className="mb-3">
-              Credits
-            </Typography>
-            <Typography variant="muted" className="mb-2 text-sm">
-              Data provided by{' '}
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary font-medium transition-colors"
-              >
-                Some Provider
-              </a>
-            </Typography>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary inline-flex items-center gap-2 text-sm transition-colors"
-            >
-              <Github className="h-4 w-4" />
-              <span>View on GitHub</span>
-            </a>
+              {/* Newsletter Column */}
+              <FooterNewsletter socialLinks={SOCIAL_LINKS} />
+            </div>
           </div>
         </div>
+      </footer>
 
-        {/* Copyright */}
-        <div className="mt-8 border-t pt-6">
-          <Typography variant="muted" className="flex items-center justify-center gap-1 text-sm">
-            Made with <Heart className="h-4 w-4 fill-red-500 text-red-500" /> using Next.js &
-            TypeScript © {currentYear}
-          </Typography>
-        </div>
-      </div>
-    </footer>
+      {/* Footer Bottom */}
+      <FooterBottom
+        copyright={FOOTER_BOTTOM.copyright}
+        logo={FOOTER_BOTTOM.logo}
+        legalLinks={FOOTER_BOTTOM.legalLinks}
+      />
+    </>
   );
 }

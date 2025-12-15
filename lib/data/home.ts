@@ -355,3 +355,99 @@ export const CTA_CONTENT = {
   buttonText: 'Get Started',
   backgroundImage: '/images/sections/abstract-vector-pattern.svg',
 } as const;
+
+/**
+ * Footer link configuration type
+ */
+export interface FooterLink {
+  id: string;
+  label: string;
+  href: string;
+}
+
+/**
+ * Footer column configuration type
+ */
+export interface FooterColumn {
+  id: string;
+  title: string;
+  links: FooterLink[];
+}
+
+/**
+ * Social media link configuration type
+ */
+export interface SocialLink {
+  id: string;
+  name: string;
+  href: string;
+  icon: 'twitter' | 'linkedin' | 'facebook';
+}
+
+/**
+ * Footer columns for the Footer Section
+ */
+export const FOOTER_COLUMNS: FooterColumn[] = [
+  {
+    id: 'platform',
+    title: 'Platform',
+    links: [
+      { id: 'meet-platform', label: 'Meet the platform', href: '/platform' },
+      { id: 'storyboard', label: 'Storyboard', href: '/storyboard' },
+      { id: 'cases', label: 'Cases', href: '/cases' },
+      { id: 'workbench', label: 'Workbench', href: '/workbench' },
+      { id: 'pricing', label: 'Pricing', href: '/pricing' },
+    ],
+  },
+  {
+    id: 'solutions',
+    title: 'Solutions',
+    links: [
+      { id: 'by-product', label: 'By product', href: '/solutions/product' },
+      { id: 'security', label: 'Security', href: '/solutions/security' },
+      { id: 'partners', label: 'Partners', href: '/solutions/partners' },
+      { id: 'professional', label: 'Professional services', href: '/solutions/professional' },
+    ],
+  },
+  {
+    id: 'resources',
+    title: 'Resources',
+    links: [
+      { id: 'blog', label: 'Blog', href: '/blog' },
+      { id: 'case-studies', label: 'Case studies', href: '/case-studies' },
+      { id: 'library', label: 'Library', href: '/library' },
+    ],
+  },
+  {
+    id: 'company',
+    title: 'Company',
+    links: [
+      { id: 'about', label: 'About Us', href: '/about' },
+      { id: 'contact', label: 'Contact', href: '/contact' },
+      { id: 'sustainability', label: 'Sustainability', href: '/sustainability' },
+      { id: 'career', label: 'Career', href: '/career' },
+    ],
+  },
+] as const;
+
+/**
+ * Social media links for the Footer Section
+ */
+export const SOCIAL_LINKS: SocialLink[] = [
+  { id: 'twitter', name: 'Twitter', href: 'https://twitter.com', icon: 'twitter' },
+  { id: 'linkedin', name: 'LinkedIn', href: 'https://linkedin.com', icon: 'linkedin' },
+  { id: 'facebook', name: 'Facebook', href: 'https://facebook.com', icon: 'facebook' },
+] as const;
+
+/**
+ * Footer bottom content
+ */
+export const FOOTER_BOTTOM = {
+  copyright: '©2025 Moniveo Technology, Inc.',
+  logo: '/images/logo.webp',
+  legalLinks: [
+    { id: 'privacy', label: 'Privacy Policy', href: '/privacy' },
+    { id: 'terms', label: 'Terms of use', href: '/terms' },
+    { id: 'disclosure', label: 'Disclosure', href: '/disclosure' },
+  ],
+} as const;
