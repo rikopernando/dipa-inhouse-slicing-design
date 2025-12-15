@@ -56,6 +56,9 @@
   --border-outline: #dde3ee;
   --primary-badge: rgba(5, 66, 252, 0.06);
   --text-placeholder: rgba(107, 123, 148, 1);
+  --enterprice-background: rgba(11, 19, 46, 1);
+  --enterprice-border: rgba(255, 255, 255, 0.08);
+  --enterprice-card: rgba(255, 255, 255, 0.04);
 
   /* Gradient Backgrounds */
   --gradient-hero-start: #ffffff;
@@ -64,6 +67,9 @@
   --gradient-shadow-end: #e5eeff;
   --gradient-toolkit-start: #e6eeff;
   --gradient-toolkit-end: #f4f7fa;
+  --gradient-enterprice-start: #93d2ff;
+  --gradient-enterprice-end: #124ff8;
+  --enterprice-text: rgba(255, 255, 255, 0.48);
 
   --background: oklch(1 0 0);
   --foreground: oklch(20.86% 0.037 269.04);
@@ -164,6 +170,19 @@
     );
   }
 
+  /* Enterprice Section */
+  .enterprice-background {
+    background-color: var(--enterprice-background);
+  }
+
+  .bg-enterprice-card {
+    background-color: var(--enterprice-card);
+  }
+
+  .text-enterprice-card {
+    color: var(--enterprice-text);
+  }
+
   /* Text Gradients */
   .text-gradient-primary {
     background: linear-gradient(180deg, var(--gradient-end) 25%, var(--gradient-start) 100%);
@@ -172,9 +191,24 @@
     background-clip: text;
   }
 
+  .text-gradient-enterprice {
+    background: linear-gradient(
+      243deg,
+      var(--gradient-enterprice-start) -13.17%,
+      var(--gradient-enterprice-end) 105%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   /* Custom Borders */
   .border-outline {
     border-color: var(--border-outline);
+  }
+
+  .border-enterprice {
+    border-color: var(--enterprice-border);
   }
 
   /* Badge Backgrounds */

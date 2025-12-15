@@ -122,3 +122,59 @@ export const TOOLKIT_CONTENT = {
   label: 'TOOLKIT',
   title: 'Complete toolkit for AI automation',
 } as const;
+
+/**
+ * Enterprise card configuration type
+ */
+export interface EnterpriseCard {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  decorativeImage?: string;
+  colSpan: string;
+}
+
+/**
+ * Content for the Enterprise Section
+ */
+export const ENTERPRISE_CONTENT = {
+  label: 'AI + AUTOMATIONS',
+  title: 'Enterprise-ready automation in seconds',
+} as const;
+
+/**
+ * Enterprise cards for the Enterprise Section
+ */
+export const ENTERPRISE_CARDS: EnterpriseCard[] = [
+  {
+    id: 'ai-team',
+    title: 'AI for the whole team',
+    description:
+      'Bring workflow automation and AI to the entire organization with apps, chatbots, and integrations.',
+    image: '/images/enterprises/ai-chatbot-enterprise.svg',
+    colSpan: 'col-span-8',
+  },
+  {
+    id: 'security',
+    title: 'Enterprise security',
+    description: 'Keep data safe with best‑in‑class security protocols and AI guardrails.',
+    image: '/images/enterprises/security-enterprise.svg',
+    decorativeImage: '/images/enterprises/security-shadow.webp',
+    colSpan: 'col-span-4',
+  },
+  {
+    id: 'integrated-app',
+    title: 'Integrate everything',
+    description: 'Connect any tool, LLM, or app to orchestrate intelligent workflows.',
+    image: '/images/enterprises/integrated-app.svg',
+    colSpan: 'col-span-5',
+  },
+  {
+    id: 'fast-intuitive',
+    title: 'Fast and intuitive',
+    description: 'Build easily with drag and drop, low/no‑code and collaboration tools.',
+    image: '/images/enterprises/fast-and-intuitive.svg',
+    colSpan: 'col-span-7',
+  },
+] as const;
