@@ -16,7 +16,7 @@ import {
  */
 export function AIChatbot() {
   return (
-    <div className="absolute right-8 bottom-8 w-[480px] rounded-[18px] bg-white p-px">
+    <div className="absolute right-8 bottom-8 hidden w-[480px] rounded-[18px] bg-white p-px lg:block">
       <InputGroup className="h-[190px]!">
         <InputGroupTextarea id="message" name="message" placeholder="Ask anythings..." />
         <InputGroupAddon align="block-end">

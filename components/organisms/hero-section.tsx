@@ -14,14 +14,14 @@ import { AIChatbot } from '@/components/molecules/ai-chatbot';
  */
 export function HeroSection() {
   return (
-    <section className="container mx-auto overflow-hidden px-4 lg:px-6">
-      <div className="bg-gradient-hero relative mx-auto max-w-7xl border-x pt-16 pl-16">
+    <section className="container mx-auto overflow-hidden px-0 lg:px-6">
+      <div className="bg-gradient-hero relative mx-auto max-w-7xl border-x px-4 pt-8 sm:px-8 sm:pt-12 lg:pt-16 lg:pl-16">
         {/* Decorative Background Patterns */}
         <div className="absolute inset-0 bg-[url(/images/hero-pattern.webp)] bg-cover bg-center bg-no-repeat opacity-40" />
-        <div className="bg-gradient-shadow-hero absolute bottom-0 left-0 z-99 h-[360px] w-[482px]" />
+        <div className="bg-gradient-shadow-hero absolute bottom-0 left-0 z-99 hidden h-[360px] w-[482px] md:block" />
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-12 items-center gap-0">
+        <div className="grid grid-cols-1 items-center gap-0 md:grid-cols-12">
           <HeroContent />
         </div>
 

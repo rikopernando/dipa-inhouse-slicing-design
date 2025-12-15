@@ -19,11 +19,11 @@ import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations';
 export function BrandSection() {
   return (
     <section className="border-border bg-background border-t">
-      <div className="container mx-auto px-4 lg:px-6">
+      <div className="container mx-auto px-0 lg:px-6">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-0 border-x md:flex-row md:justify-between">
           {/* Headline */}
           <AnimateOnScroll variants={fadeInUp}>
-            <div className="max-w-xs px-12 py-8 text-center md:text-left">
+            <div className="flex h-[120px] max-w-xs items-center justify-center px-8 lg:h-[150px]">
               <Typography variant="p" className="text-muted-foreground max-w-lg text-xl">
                 {BRAND_CONTENT.headline}
               </Typography>

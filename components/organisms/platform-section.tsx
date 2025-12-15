@@ -12,8 +12,8 @@ import Image from 'next/image';
 export function PlatformSection() {
   return (
     <section className="bg-background border-t">
-      <div className="container mx-auto px-4 lg:px-6">
-        <div className="bg-gradient-platfrom relative mx-auto max-w-7xl border-x px-8 pt-20 md:px-16">
+      <div className="container mx-auto px-0 lg:px-6">
+        <div className="bg-gradient-platfrom relative mx-auto max-w-7xl border-x px-8 pt-12 lg:px-16">
           {/* Decorative Images */}
           {PLATFORM_DECORATIVE_IMAGES.map((image) => (
             <PlatformDecorativeImage

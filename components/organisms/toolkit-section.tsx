@@ -25,8 +25,8 @@ export function ToolkitSection() {
 
   return (
     <section className="bg-background border-t">
-      <div className="container mx-auto px-4 lg:px-6">
-        <div className="mx-auto max-w-7xl border-x px-16 py-20">
+      <div className="container mx-auto px-0 lg:px-6">
+        <div className="mx-auto max-w-7xl border-x px-16 py-20 sm:px-8 sm:py-12">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Left content - Dynamic Image Display */}
             <ToolkitImageDisplay currentItem={currentItem} />

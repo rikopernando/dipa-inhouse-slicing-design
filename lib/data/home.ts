@@ -175,7 +175,7 @@ export const ENTERPRISE_CARDS: EnterpriseCard[] = [
     description:
       'Bring workflow automation and AI to the entire organization with apps, chatbots, and integrations.',
     image: '/images/enterprises/ai-chatbot-enterprise.svg',
-    colSpan: 'col-span-8',
+    colSpan: 'col-span-1 lg:col-span-8',
     variant: 'image-background',
   },
   {
@@ -184,7 +184,7 @@ export const ENTERPRISE_CARDS: EnterpriseCard[] = [
     description: 'Keep data safe with best‑in‑class security protocols and AI guardrails.',
     image: '/images/enterprises/security-enterprise.svg',
     decorativeImage: '/images/enterprises/security-shadow.webp',
-    colSpan: 'col-span-4',
+    colSpan: 'col-span-1 lg:col-span-4',
     variant: 'image-top',
   },
   {
@@ -192,7 +192,7 @@ export const ENTERPRISE_CARDS: EnterpriseCard[] = [
     title: 'Integrate everything',
     description: 'Connect any tool, LLM, or app to orchestrate intelligent workflows.',
     image: '/images/enterprises/integrated-app.svg',
-    colSpan: 'col-span-5',
+    colSpan: 'col-span-1 lg:col-span-5',
     variant: 'image-background',
   },
   {
@@ -200,7 +200,7 @@ export const ENTERPRISE_CARDS: EnterpriseCard[] = [
     title: 'Fast and intuitive',
     description: 'Build easily with drag and drop, low/no‑code and collaboration tools.',
     image: '/images/enterprises/fast-and-intuitive.svg',
-    colSpan: 'col-span-7',
+    colSpan: 'col-span-1 lg:col-span-7',
     variant: 'image-background',
   },
 ] as const;

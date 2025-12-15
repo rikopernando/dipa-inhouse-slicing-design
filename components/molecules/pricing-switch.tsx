@@ -20,7 +20,7 @@ interface PricingSwitchProps {
  */
 export function PricingSwitch({ isAnnual, onToggle, annualDiscount }: PricingSwitchProps) {
   return (
-    <div className="flex items-center justify-center gap-3 pl-16">
+    <div className="flex items-center justify-center gap-3 px-4 sm:px-0">
       <button
         onClick={() => onToggle(false)}
         className={cn(

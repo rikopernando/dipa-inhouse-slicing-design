@@ -18,7 +18,7 @@ import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations';
 export function HeroContent() {
   return (
     <motion.div
-      className="relative z-10 col-span-8 space-y-6"
+      className="relative z-10 col-span-1 space-y-6 pb-8 md:col-span-8 md:pb-0"
       variants={staggerContainer}
       initial="hidden"
       animate="visible"

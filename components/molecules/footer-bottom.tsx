@@ -18,8 +18,8 @@ interface FooterBottomProps {
 export function FooterBottom({ copyright, logo, legalLinks }: FooterBottomProps) {
   return (
     <div className="border-t">
-      <div className="container mx-auto p-6 lg:px-6">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
+      <div className="container mx-auto p-8 lg:p-6">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 md:flex-row lg:gap-6">
           {/* Copyright */}
           <Typography variant="muted" className="text-sm">
             {copyright}
@@ -32,12 +32,12 @@ export function FooterBottom({ copyright, logo, legalLinks }: FooterBottomProps)
               alt="Moniveo"
               width={120}
               height={32}
-              className="h-8 w-auto object-scale-down"
+              className="h-8 w-auto object-none lg:object-scale-down"
             />
           </div>
 
           {/* Legal Links */}
-          <nav className="flex flex-wrap items-center justify-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-4 lg:gap-6">
             {legalLinks.map((link) => (
               <Link
                 key={link.id}

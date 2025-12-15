@@ -16,8 +16,8 @@ import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations';
 export function EnterpriseSection() {
   return (
     <section className="bg-enterprise">
-      <div className="container mx-auto px-4 lg:px-6">
-        <div className="border-enterprise mx-auto max-w-7xl border-x px-16 py-20">
+      <div className="container mx-auto px-0 lg:px-6">
+        <div className="border-enterprise mx-auto max-w-7xl border-x px-8 py-12 lg:px-16 lg:py-20">
           {/* Section Header */}
           <AnimateOnScroll variants={fadeInUp}>
             <header className="mb-12 flex max-w-[560px] flex-col gap-4">
@@ -35,7 +35,7 @@ export function EnterpriseSection() {
 
           {/* Enterprise Cards Grid */}
           <motion.div
-            className="grid gap-4 md:grid-cols-12"
+            className="grid grid-cols-1 gap-4 lg:grid-cols-12"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"

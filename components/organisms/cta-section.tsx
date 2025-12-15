@@ -17,10 +17,10 @@ import { scaleIn, fadeInUp } from '@/lib/animations';
 export function CTASection() {
   return (
     <section className="bg-background border-t">
-      <div className="container mx-auto px-4 lg:px-6">
+      <div className="container mx-auto px-0 lg:px-6">
         <AnimateOnScroll variants={scaleIn}>
           <div
-            className="bg-enterprise container mx-auto max-w-7xl bg-cover bg-center bg-no-repeat px-4 py-20 text-center lg:px-6"
+            className="bg-enterprise container mx-auto max-w-7xl bg-cover bg-center bg-no-repeat px-8 py-12 text-center lg:px-6 lg:py-20"
             style={{
               backgroundImage: `url(${CTA_CONTENT.backgroundImage})`,
             }}

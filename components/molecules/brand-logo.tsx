@@ -13,7 +13,7 @@ interface BrandLogoProps {
  */
 export function BrandLogo({ brand }: BrandLogoProps) {
   return (
-    <div className="flex items-center justify-center border-l p-12 grayscale transition-all duration-300 hover:grayscale-0">
+    <div className="flex h-[120px] items-center justify-center border-l p-4 grayscale transition-all duration-300 hover:grayscale-0 lg:h-[150px]">
       <Image
         src={brand.logo}
         alt={`${brand.name} logo`}

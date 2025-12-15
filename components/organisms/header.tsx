@@ -26,7 +26,7 @@ export function Header() {
         </Link>
 
         {/* Navigation Links - Centered */}
-        <nav className="flex items-center gap-10">
+        <nav className="flex items-center gap-4 lg:gap-10">
           <Link
             href="/platform"
             className="text-foreground hover:text-foreground/80 text-sm transition-colors"
