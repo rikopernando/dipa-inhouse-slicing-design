@@ -56,10 +56,10 @@
   --border-outline: #dde3ee;
   --primary-badge: rgba(5, 66, 252, 0.06);
   --text-placeholder: rgba(107, 123, 148, 1);
-  --enterprice-background: rgba(11, 19, 46, 1);
-  --enterprice-border: rgba(255, 255, 255, 0.08);
-  --enterprice-card: rgba(255, 255, 255, 0.04);
-  --enterprice-text: rgba(255, 255, 255, 0.48);
+  --enterprise-background: rgba(11, 19, 46, 1);
+  --enterprise-border: rgba(255, 255, 255, 0.08);
+  --enterprise-card: rgba(255, 255, 255, 0.04);
+  --enterprise-text: rgba(255, 255, 255, 0.48);
 
   /* Gradient Backgrounds */
   --gradient-hero-start: #ffffff;
@@ -68,8 +68,8 @@
   --gradient-shadow-end: #e5eeff;
   --gradient-toolkit-start: #e6eeff;
   --gradient-toolkit-end: #f4f7fa;
-  --gradient-enterprice-start: #93d2ff;
-  --gradient-enterprice-end: #124ff8;
+  --gradient-enterprise-start: #93d2ff;
+  --gradient-enterprise-end: #124ff8;
   --gradient-platform-start: #ffffff;
   --gradient-platform-end: #f5f8ff;
   --gradient-price-card-start: #ffffff;
@@ -177,17 +177,17 @@
     );
   }
 
-  /* Enterprice Section */
-  .bg-enterprice {
-    background-color: var(--enterprice-background);
+  /* enterprise Section */
+  .bg-enterprise {
+    background-color: var(--enterprise-background);
   }
 
-  .bg-enterprice-card {
-    background-color: var(--enterprice-card);
+  .bg-enterprise-card {
+    background-color: var(--enterprise-card);
   }
 
-  .text-enterprice-card {
-    color: var(--enterprice-text);
+  .text-enterprise-card {
+    color: var(--enterprise-text);
   }
 
   /* Platfrom Section */
@@ -225,11 +225,11 @@
     background-clip: text;
   }
 
-  .text-gradient-enterprice {
+  .text-gradient-enterprise {
     background: linear-gradient(
       243deg,
-      var(--gradient-enterprice-start) -13.17%,
-      var(--gradient-enterprice-end) 105%
+      var(--gradient-enterprise-start) -13.17%,
+      var(--gradient-enterprise-end) 105%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -241,8 +241,8 @@
     border-color: var(--border-outline);
   }
 
-  .border-enterprice {
-    border-color: var(--enterprice-border);
+  .border-enterprise {
+    border-color: var(--enterprise-border);
   }
 
   /* Badge Backgrounds */

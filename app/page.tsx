@@ -6,6 +6,7 @@ import { EnterpriseSection } from '@/components/organisms/enterprise-section';
 import { PlatformSection } from '@/components/organisms/platform-section';
 import { AchievementSection } from '@/components/organisms/achievement-section';
 import { PricingSection } from '@/components/organisms/pricing-section';
+import { CTASection } from '@/components/organisms/cta-section';
 
 /**
  * Enable ISR (Incremental Static Regeneration)
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 /**
  * Home Page (Server Component with ISR)
  * Pre-rendered at build time and revalidated every 30 minutes
- * Features hero, brand, toolkit, enterprise, platform, achievement, and pricing sections
+ * Features hero, brand, toolkit, enterprise, platform, achievement, pricing, and CTA sections
  */
 export default async function Home() {
   return (
@@ -37,6 +38,7 @@ export default async function Home() {
       <PlatformSection />
       <AchievementSection />
       <PricingSection />
+      <CTASection />
     </>
   );
 }

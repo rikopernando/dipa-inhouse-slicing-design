@@ -340,3 +340,18 @@ export const PRICING_PLANS: PricingPlan[] = [
     bestValueLabel: 'Best Value',
   },
 ] as const;
+
+/**
+ * Content for the CTA Section
+ */
+export const CTA_CONTENT = {
+  title: {
+    text: 'Turn workflow into',
+    highlight: 'AI agent',
+    suffix: 'automations',
+  },
+  description:
+    'Powerful and production-ready, our cloud platform has the solutions you need to succeed.',
+  buttonText: 'Get Started',
+  backgroundImage: '/images/sections/abstract-vector-pattern.svg',
+} as const;

@@ -11,10 +11,10 @@ interface EnterpriseCardProps {
  * Shared card styles for consistency
  */
 const CARD_STYLES = {
-  base: 'h-[400px] group bg-enterprice-card relative flex flex-col overflow-hidden rounded-3xl transition-shadow duration-300 hover:shadow-lg',
+  base: 'h-[400px] group bg-enterprise-card relative flex flex-col overflow-hidden rounded-3xl transition-shadow duration-300 hover:shadow-lg',
   content: 'space-y-3',
   title: 'text-2xl text-white',
-  description: 'text-enterprice-card max-w-[420px] text-lg',
+  description: 'text-enterprise-card max-w-[420px] text-lg',
 } as const;
 
 /**

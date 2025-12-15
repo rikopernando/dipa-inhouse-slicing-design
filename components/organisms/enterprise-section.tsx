@@ -10,14 +10,14 @@ import { EnterpriseCard } from '@/components/molecules/enterprise-card';
  */
 export function EnterpriseSection() {
   return (
-    <section className="bg-enterprice">
+    <section className="bg-background">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="border-enterprice mx-auto max-w-7xl border-x px-16 py-20">
+        <div className="bg-enterprise border-enterprise mx-auto max-w-7xl border-x px-16 py-20">
           {/* Section Header */}
           <header className="mb-12 flex max-w-[560px] flex-col gap-4">
             <Typography
               variant="small"
-              className="text-gradient-enterprice text-base tracking-wider uppercase"
+              className="text-gradient-enterprise text-base tracking-wider uppercase"
             >
               {ENTERPRISE_CONTENT.label}
             </Typography>
