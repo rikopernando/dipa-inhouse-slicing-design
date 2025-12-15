@@ -283,10 +283,10 @@ export interface PricingPlan {
   description: string;
   monthlyPrice: number;
   annualPrice: number;
-  isPopular?: boolean;
   features: PricingFeature[];
   buttonText: string;
   buttonVariant: 'default' | 'outline';
+  bestValueLabel?: string;
 }
 
 /**
@@ -325,7 +325,6 @@ export const PRICING_PLANS: PricingPlan[] = [
     description: 'Fuel your product workflow with more advanced research.',
     monthlyPrice: 12,
     annualPrice: 10.8,
-    isPopular: true,
     features: [
       { id: 'workspace', text: 'Unlimited workspace', included: true, disabled: false },
       {
@@ -338,5 +337,6 @@ export const PRICING_PLANS: PricingPlan[] = [
     ],
     buttonText: 'Upgrade Now',
     buttonVariant: 'default',
+    bestValueLabel: 'Best Value',
   },
 ] as const;
