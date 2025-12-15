@@ -63,10 +63,10 @@
   --primary-foreground: oklch(83.74% 0.09 240.27);
   --secondary: oklch(57.34% 0.23 265.4);
   --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
+  --muted: rgba(205, 213, 224, 1);
   --muted-foreground: rgba(0, 0, 0, 0.72);
   --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent-foreground: rgba(103, 116, 137, 1);
   --destructive: oklch(0.577 0.245 27.325);
   --border: rgba(227, 232, 239, 1);
   --input: rgba(227, 232, 239, 1);
@@ -133,6 +133,10 @@
     background: linear-gradient(205.19deg, rgba(229, 238, 255, 0) 56.02%, #e5eeff 83.98%);
   }
 
+  .bg-gradient-toolkit {
+    background: linear-gradient(180deg, #e6eeff 0%, #f4f7fa 100%);
+  }
+
   .text-gradient-primary {
     background: linear-gradient(180deg, #0542fc 25%, #93d2ff 100%);
     -webkit-background-clip: text;
@@ -157,8 +161,8 @@
   body {
     @apply bg-background text-foreground;
   }
-  .font-inter {
-    font-family: var(--font-inter), system-ui, sans-serif;
+  .font-neue-montreal {
+    font-family: var(--font-neue-montreal), system-ui, sans-serif;
   }
 
   @keyframes fade-in {

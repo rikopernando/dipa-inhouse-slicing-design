@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { HeroSection } from '@/components/organisms/hero-section';
 import { BrandSection } from '@/components/organisms/brand-section';
+import { ToolkitSection } from '@/components/organisms/toolkit-section';
 
 /**
  * Enable ISR (Incremental Static Regeneration)
@@ -20,13 +21,14 @@ export const metadata: Metadata = {
 /**
  * Home Page (Server Component with ISR)
  * Pre-rendered at build time and revalidated every 30 minutes
- * Features hero section and brand showcase
+ * Features hero section, brand showcase, and toolkit section
  */
 export default async function Home() {
   return (
     <>
       <HeroSection />
       <BrandSection />
+      <ToolkitSection />
     </>
   );
 }
