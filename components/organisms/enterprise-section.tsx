@@ -1,12 +1,12 @@
 import { Typography } from '@/components/atoms/typography';
 import { ENTERPRISE_CONTENT, ENTERPRISE_CARDS } from '@/lib/data/home';
-import { EnterpriseAIChatbotCard } from '@/components/molecules/enterprise-ai-chatbot-card';
-import { EnterpriseSecurityCard } from '@/components/molecules/enterprise-security-card';
-import { EnterpriseIntegratedAppCard } from '@/components/molecules/enterprise-integrated-app-card';
-import { EnterpriseFastIntuitiveCard } from '@/components/molecules/enterprise-fast-intuitive-card';
+import { EnterpriseCard } from '@/components/molecules/enterprise-card';
 
 /**
  * Enterprise Section Component
+ *
+ * Displays the enterprise features section with a grid of feature cards.
+ * Each card supports different layout variants for flexible content presentation.
  */
 export function EnterpriseSection() {
   return (
@@ -28,10 +28,9 @@ export function EnterpriseSection() {
 
           {/* Enterprise Cards Grid */}
           <div className="grid gap-4 md:grid-cols-12">
-            <EnterpriseAIChatbotCard card={ENTERPRISE_CARDS[0]} />
-            <EnterpriseSecurityCard card={ENTERPRISE_CARDS[1]} />
-            <EnterpriseIntegratedAppCard card={ENTERPRISE_CARDS[2]} />
-            <EnterpriseFastIntuitiveCard card={ENTERPRISE_CARDS[3]} />
+            {ENTERPRISE_CARDS.map((card) => (
+              <EnterpriseCard key={card.id} card={card} />
+            ))}
           </div>
         </div>
       </div>

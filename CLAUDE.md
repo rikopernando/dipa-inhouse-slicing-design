@@ -63,14 +63,17 @@ The project follows Atomic Design methodology with a strict component hierarchy:
 ### Git Hooks (Husky)
 
 Pre-commit hook runs:
+
 - `lint-staged` - ESLint fix + Prettier on staged files
 
 Commit-msg hook runs:
+
 - `commitlint` - Validates conventional commit format
 
 ### Commit Message Format
 
 Must follow Conventional Commits:
+
 ```
 <type>(<scope>): <subject>
 
@@ -95,6 +98,7 @@ Components use TypeScript with proper typing and JSDoc comments. UI components f
 ### Typography Usage
 
 Use the `Typography` component for all text to maintain consistency:
+
 ```tsx
 <Typography variant="h1">Page Title</Typography>
 <Typography variant="muted">Secondary text</Typography>
@@ -103,8 +107,11 @@ Use the `Typography` component for all text to maintain consistency:
 ### Metadata Pattern
 
 Pages define metadata exports:
+
 ```tsx
-export const metadata: Metadata = { /* ... */ };
+export const metadata: Metadata = {
+  /* ... */
+};
 ```
 
 Root layout includes comprehensive SEO setup with Open Graph, Twitter cards, and robot directives.
