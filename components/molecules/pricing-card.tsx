@@ -28,7 +28,7 @@ export function PricingCard({ plan, isAnnual }: PricingCardProps) {
       )}
     >
       {/* Card Header */}
-      <CardHeader className="space-y-4 px-8">
+      <CardHeader className="space-y-4 px-4 sm:px-8">
         <div className="grid grid-cols-5 items-center gap-x-2 gap-y-8">
           <CardTitle className="col-span-2 text-2xl">{plan.name}</CardTitle>
           <CardDescription className="text-accent-foreground col-span-3 max-w-[250px] text-base">
@@ -61,7 +61,7 @@ export function PricingCard({ plan, isAnnual }: PricingCardProps) {
       </CardHeader>
 
       {/* Features List */}
-      <CardContent className="flex-1 px-8">
+      <CardContent className="flex-1 px-4 sm:px-8">
         <div className="border-t pt-6">
           <ul className="space-y-4">
             {plan.features.map((feature) => (

@@ -174,7 +174,8 @@ export const ENTERPRISE_CARDS: EnterpriseCard[] = [
     title: 'AI for the whole team',
     description:
       'Bring workflow automation and AI to the entire organization with apps, chatbots, and integrations.',
-    image: '/images/enterprises/ai-chatbot-enterprise.svg',
+    image: '/images/enterprises/vector-pattern.svg',
+    decorativeImage: '/images/enterprises/ai-chatbot.svg',
     colSpan: 'col-span-1 lg:col-span-8',
     variant: 'image-background',
   },

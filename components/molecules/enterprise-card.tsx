@@ -11,10 +11,10 @@ interface EnterpriseCardProps {
  * Shared card styles for consistency
  */
 const CARD_STYLES = {
-  base: 'h-[400px] group bg-enterprise-card relative flex flex-col overflow-hidden rounded-3xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1',
+  base: 'h-[250px] sm:h-[400px] group bg-enterprise-card relative flex flex-col overflow-hidden rounded-3xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1',
   content: 'space-y-3',
-  title: 'text-2xl text-white',
-  description: 'text-enterprise-card max-w-[420px] text-lg',
+  title: 'text-lg sm:text-2xl text-white',
+  description: 'text-enterprise-card max-w-[420px] text-sm sm:text-lg',
 } as const;
 
 /**
@@ -36,8 +36,8 @@ export function EnterpriseCard({ card }: EnterpriseCardProps) {
       className={cn(
         CARD_STYLES.base,
         card.colSpan,
-        isImageBackground && 'px-8 pt-8',
-        isImageTop && 'p-8',
+        isImageBackground && 'px-4 pt-4 sm:px-8 sm:pt-8',
+        isImageTop && 'p-4 sm:p-8',
       )}
     >
       {/* Image Top Layout */}
@@ -45,7 +45,7 @@ export function EnterpriseCard({ card }: EnterpriseCardProps) {
         <>
           {/* Main Image */}
           <div className="relative flex-1">
-            <div className="relative mx-auto h-full min-h-[200px] w-full max-w-[440px]">
+            <div className="relative mx-auto h-full min-h-[120px] w-full max-w-[440px] sm:min-h-[200px]">
               <Image
                 src={card.image}
                 alt={card.title}
@@ -92,6 +92,18 @@ export function EnterpriseCard({ card }: EnterpriseCardProps) {
               {card.description}
             </Typography>
           </div>
+
+          {/* Decorative Image (Optional) */}
+          {card.decorativeImage && (
+            <div className="absolute top-[56px] right-0 left-0 mx-auto h-full max-w-[440px] sm:top-[76px]">
+              <Image
+                src={card.decorativeImage}
+                alt="Decorative pattern"
+                fill
+                className="object-contain"
+              />
+            </div>
+          )}
 
           {/* Background Image */}
           <div className="absolute top-0 left-0 h-full w-full">

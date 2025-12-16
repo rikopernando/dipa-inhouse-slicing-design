@@ -21,13 +21,12 @@ export function FooterNewsletter({ socialLinks }: FooterNewsletterProps) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const email = formData.get('email');
-    // TODO: Implement newsletter subscription logic
     console.log('Subscribe:', email);
     e.currentTarget.reset();
   };
 
   return (
-    <div className="space-y-6">
+    <div className="col-span-2 space-y-6 sm:col-span-1">
       <Typography variant="h6" className="font-semibold">
         Subscribe
       </Typography>
