@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, type UseInViewOptions } from 'framer-motion';
 import { useRef, ReactNode } from 'react';
 import type { Variants } from 'framer-motion';
 import { defaultViewport } from '@/lib/animations';
@@ -25,7 +25,7 @@ export function AnimateOnScroll({
   delay = 0,
 }: AnimateOnScrollProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, defaultViewport);
+  const isInView = useInView(ref, defaultViewport as UseInViewOptions);
 
   return (
     <motion.div
