@@ -16,7 +16,7 @@ export function Footer() {
         <div className="container mx-auto px-0 lg:px-6">
           <div className="mx-auto max-w-7xl border-x">
             {/* Footer Columns Grid */}
-            <div className="grid grid-cols-1 gap-8 px-8 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:px-16 lg:py-20">
+            <div className="grid grid-cols-2 gap-8 px-4 py-6 sm:grid-cols-2 sm:px-8 sm:py-12 md:grid-cols-3 lg:grid-cols-5 lg:px-16 lg:py-20">
               {/* Navigation Columns */}
               {FOOTER_COLUMNS.map((column) => (
                 <FooterColumn key={column.id} column={column} />

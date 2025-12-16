@@ -18,8 +18,8 @@ interface FooterBottomProps {
 export function FooterBottom({ copyright, logo, legalLinks }: FooterBottomProps) {
   return (
     <div className="border-t">
-      <div className="container mx-auto p-8 lg:p-6">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 md:flex-row lg:gap-6">
+      <div className="container mx-auto p-4 py-6 sm:p-8 lg:p-6">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:gap-2 md:flex-row lg:gap-6">
           {/* Copyright */}
           <Typography variant="muted" className="text-sm">
             {copyright}

@@ -20,7 +20,7 @@ export function CTASection() {
       <div className="container mx-auto px-0 lg:px-6">
         <AnimateOnScroll variants={scaleIn}>
           <div
-            className="bg-enterprise container mx-auto max-w-7xl bg-cover bg-center bg-no-repeat px-8 py-12 text-center lg:px-6 lg:py-20"
+            className="bg-enterprise container mx-auto max-w-7xl bg-cover bg-center bg-no-repeat px-4 py-6 text-center sm:px-8 sm:py-12 lg:px-6 lg:py-20"
             style={{
               backgroundImage: `url(${CTA_CONTENT.backgroundImage})`,
             }}

@@ -17,10 +17,10 @@ export function EnterpriseSection() {
   return (
     <section className="bg-enterprise">
       <div className="container mx-auto px-0 lg:px-6">
-        <div className="border-enterprise mx-auto max-w-7xl border-x px-8 py-12 lg:px-16 lg:py-20">
+        <div className="border-enterprise mx-auto max-w-7xl border-x px-4 py-8 sm:px-8 sm:py-12 lg:px-16 lg:py-20">
           {/* Section Header */}
           <AnimateOnScroll variants={fadeInUp}>
-            <header className="mb-12 flex max-w-[560px] flex-col gap-4">
+            <header className="mb-8 flex max-w-[560px] flex-col sm:mb-12 sm:gap-4">
               <Typography
                 variant="small"
                 className="text-gradient-enterprise text-base tracking-wider uppercase"

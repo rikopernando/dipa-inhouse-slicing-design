@@ -13,7 +13,7 @@ export function PlatformSection() {
   return (
     <section className="bg-background border-t">
       <div className="container mx-auto px-0 lg:px-6">
-        <div className="bg-gradient-platfrom relative mx-auto max-w-7xl border-x px-8 pt-12 lg:px-16">
+        <div className="bg-gradient-platfrom relative mx-auto max-w-7xl border-x px-4 pt-8 sm:px-8 sm:pt-12 lg:px-16">
           {/* Decorative Images */}
           {PLATFORM_DECORATIVE_IMAGES.map((image) => (
             <PlatformDecorativeImage
@@ -45,7 +45,7 @@ export function PlatformSection() {
             alt={PLATFORM_CONTENT.mainImage.alt}
             width={PLATFORM_CONTENT.mainImage.width}
             height={PLATFORM_CONTENT.mainImage.height}
-            className="mt-12 rounded-tl-md rounded-tr-md border-x border-t object-cover"
+            className="mt-6 rounded-tl-md rounded-tr-md border-x border-t object-cover sm:mt-12"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1080px"
             priority
           />

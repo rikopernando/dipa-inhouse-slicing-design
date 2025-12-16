@@ -28,7 +28,7 @@ export function AchievementCard({ achievement, isFirst = false }: AchievementCar
     <div
       ref={ref}
       className={cn(
-        'py:12 flex flex-col gap-4 px-8 py-8 text-center lg:px-24',
+        'py:12 flex flex-col gap-4 border-b px-4 py-6 text-center sm:border-b-0 sm:px-8 sm:py-8 lg:px-24',
         !isFirst && 'md:border-l',
       )}
     >

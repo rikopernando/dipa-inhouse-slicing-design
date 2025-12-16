@@ -14,7 +14,7 @@ interface PricingSectionHeaderProps {
  */
 export function PricingSectionHeader({ label, title }: PricingSectionHeaderProps) {
   return (
-    <header className="mb-12 flex flex-col items-center gap-4 text-center">
+    <header className="mb-6 flex flex-col items-center gap-4 text-center sm:mb-12">
       <Typography variant="small" className="text-primary text-base tracking-wider uppercase">
         {label}
       </Typography>

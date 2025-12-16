@@ -13,7 +13,7 @@ interface ToolkitImageDisplayProps {
  */
 export function ToolkitImageDisplay({ currentItem }: ToolkitImageDisplayProps) {
   return (
-    <div className="bg-gradient-toolkit relative mt-8 aspect-square overflow-hidden rounded-3xl p-10">
+    <div className="bg-gradient-toolkit relative mt-0 aspect-square overflow-hidden rounded-3xl p-10 sm:mt-8">
       <div className="relative h-full w-full">
         <Image
           key={currentItem.id}

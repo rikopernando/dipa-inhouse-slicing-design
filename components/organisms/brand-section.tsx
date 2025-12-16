@@ -23,7 +23,7 @@ export function BrandSection() {
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-0 border-x md:flex-row md:justify-between">
           {/* Headline */}
           <AnimateOnScroll variants={fadeInUp}>
-            <div className="flex h-[120px] max-w-xs items-center justify-center px-8 lg:h-[150px]">
+            <div className="flex h-[90px] max-w-xs items-center justify-center px-0 sm:h-[120px] sm:px-8 lg:h-[150px]">
               <Typography variant="p" className="text-muted-foreground max-w-lg text-xl">
                 {BRAND_CONTENT.headline}
               </Typography>
@@ -32,7 +32,7 @@ export function BrandSection() {
 
           {/* Brand logos grid */}
           <motion.div
-            className="grid flex-1 grid-cols-2 gap-0 md:grid-cols-4"
+            className="grid w-full flex-1 grid-cols-2 gap-0 md:grid-cols-4"
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
